@@ -18,7 +18,7 @@ we need to store these manual steps in a csv file and to store in a git repo usi
 
 salesforce change sets for small deployments and its a in built tool that lets you to move between connected orgs.(sandbox to production)
 the change sets is used for a one time manual migration if both orgs are linked.
-
+Helooo
 
 some changes cannot be moved or deployed via deployment tools, u will have manually replicate them all to the target org.
 Like access settings & security , reports & dashboards, integration and connected apps.
