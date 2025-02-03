@@ -1,0 +1,48 @@
+29/01/25
+
+poc rems forward push
+commit metadata
+obj 
+10 multiple things
+deploy custom obj to flex deploy
+don't need to modify things but need to commit metadata what are the meta data that committed to the flex deploy
+
+create a custom object, vf pages, templates and fields or other thing in one source org
+Flex Deploy--> projects under menu--> devops poc prj--> salesforce org management--> select the branch in the repo to store---> ensure the source org is correct---> click compare ---> select the files you want to commit---> ensure all dependency file is selected or not---> click on commit and create package to store--> ensure that you didn't collapse anything---> click on the created package and recheck the project files is committed---> then click on build under package---> if build get success the click on deploy to deploy in the target org.  
+
+30/01/25
+How do we commit our excel sheet in azure git repos
+using source control
+i understand from yesterday's task that the manual task between source org to target org that we can perform by export and import the files into csv format but some things (like minor changes) can not be migrated that we need to do it manually on the org. 
+we need to store these manual steps in a csv file and to store in a git repo using flex deploy or directly to the git.
+
+salesforce change sets for small deployments and its a in built tool that lets you to move between connected orgs.(sandbox to production)
+the change sets is used for a one time manual migration if both orgs are linked.
+
+
+some changes cannot be moved or deployed via deployment tools, u will have manually replicate them all to the target org.
+Like access settings & security , reports & dashboards, integration and connected apps.
+
+2 ways we can add a csv files to the repository 
+
+1. directly adding the csv file into git repo with drag and drop or using push command
+2. uploading csv file into the repository using flex deploy.
+  projects--> select the project you wanted to upload the csv file--> execution tab--> click on any recent execution--> aritifacts tab will be available---> click on that---> there must be an option in the artifacts tab to upload csv file. blocking here
+  we can also create a workflow to upload a csv file. create workflow with utility type then only the shell script will be available under workflow operation it is not available. blocking here.
+utility type is generating and storing csv files, database operations, code scanning, custom scripts for automation.
+  we can also create a dynamically create a csv file. But shell script option is not available.
+  need to check!!
+
+3/02/25
+
+ to upload the file in repository
+and add some changes into the file and merge the changes one branch into another branch. 
+once that is done try to squash those commits together.
+
+
+
+
+
+
+
+
