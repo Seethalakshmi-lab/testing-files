@@ -1,0 +1,2 @@
+Copying and pasting is not how you upload files to github. Use a git client to push the files into the repository. To upload the file, make sure that you add it to the repository, commit everything and then push the changes to the repository.
+I know I can make a new file in a github repository, but there's no way to upload a certain file. I am trying to upload a csv file as part of a project on github, and I don't want to copy and paste it into a a text file. How can I do that?
