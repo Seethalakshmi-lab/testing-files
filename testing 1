@@ -1,0 +1,1 @@
+Copying and pasting is not how you upload files to github. Use a git client to push the files into the repository. To upload the file, make sure that you add it to the repository, commit everything and then push the changes to the repository.
