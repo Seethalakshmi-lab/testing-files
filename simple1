@@ -19,3 +19,28 @@ Set new field values for the records you update:
 
 Account ID (Field) Reference (Type) [Case].Contact.AccountId (Value)
 Activate the process.
+
+
+
+Navigate to Setup | Type "Process Builder" in the quick find | New.
+Create the process on Case object.
+
+Start the process: When a record is created & edited.
+Criteria for Executing Actions: Conditions are met.
+
+Set conditions:
+[Case].ContactId(Field) IsNull (operator) Boolean (Type) False (Type)
+[Case].ContactId(Field) Ischanged(operator) Boolean (Type) True (Type)
+
+Conditions: All the Conditions are met (AND)
+Select Immediate Actions.
+
+Action Type: Update Records.
+Record Type: Select the Case record that started your process.
+
+Criteria for updating records: No Criteria-Just update the records!
+Set new field values for the records you update:
+
+Account ID (Field) Reference (Type) [Case].Contact.AccountId (Value)
+Activate the process.
+
